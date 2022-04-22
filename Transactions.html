@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="See also, See also, See also">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Transactions</title>
+  <link rel="stylesheet" href="nicepage.css" media="screen">
+  <link rel="stylesheet" href="Transactions.css" media="screen">
+  <link rel="stylesheet" href="./lib/spot-light/css/main.css" />
+  <noscript>
+    <link rel="stylesheet" href="./lib/spot-light/css/noscript.css" />
+  </noscript>
+  <link rel="stylesheet" href="./lib/css/custom.css" />
+  <link rel="stylesheet" href="./lib/css/custom-2.css" />
+
+
+  <!-- scripts -->
+  <script src="./lib/js/jquery-3.6.0.js"></script>
+  <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+
+  <script src="./lib/js/anime.js"></script>
+  <script src="./lib/js/custom.js"></script>
+  <script src="./lib/js/linker.js"></script>
+  <script src="./lib/js/layout.js"></script>
+  
+  <script src="./lib/js/views.js"></script>
+</head>
+
+<body class="u-body">
+  <section id="money-transfer">
+    <h3 class="transaction-head">Transfer</h3>
+    <form onsubmit="return window.transfer()" action="./bug.html" target="_blank">
+      <div style="padding:0px 10px;">
+        <div class="fields">
+          <div class="field full">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" value="">
+          </div>
+          <div class="field full">
+            <label for="f-name">F.Name</label>
+            <input type="text" name="f-name" id="f-name" value="">
+          </div>
+          <div class="field full">
+            <label for="gf-name">G.F.Name</label>
+            <input type="text" name="gf-name" id="gf-name" value="">
+
+          </div>
+          <label style="margin-top: 20px;">Recipient Account No</label>
+          <div class="account-no field full">
+            <input yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1">
+            <input yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1"><input
+              yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="digit" yt-max-length="1">
+          </div>
+          <div class="account-no-small field full">
+            <input type="text" yt-type="int" class="no-segment" yt-calls="inputDigits(keyup)" type="text" yt-type="int"
+              class="digit" id="first-four" yt-next-focus="#second-four" yt-max-length="4"><i>-</i><input type="text"
+              yt-type="int" yt-calls="inputDigits(keyup)" type="text" yt-type="int" class="no-segment" id="second-four"
+              yt-next-focus="#last-five" yt-max-length="4" class="no-segment"><i>-</i><input
+              style="width:100px !important" type="text" yt-type="int" class="no-segment" yt-calls="inputDigits(keyup)"
+              type="text" yt-type="int" class="digit" yt-max-length="5" id="last-five">
+          </div>
+          <div class="field half" style="margin-top:30px">
+            <label for="amount">Amount</label>
+            <input required yt-calls="inputDigits(keyup)" yt-type="int" type="text" id="amount" name="amount"
+              checked="">
+          </div>
+          <div class="field full" style="margin-top:30px">
+            <input type="radio" id="saving" name="account-type" checked="">
+            <label for="saving">Saving</label>
+          </div>
+          <div class="field full" style="margin-top:10px">
+            <input type="radio" id="special" name="account-type">
+            <label for="special">Special</label>
+          </div>
+        </div>
+        <ul class="actions" style="padding:2px 12px;">
+          <li><input type="submit" name="submit" id="transfer" value="Transfer">
+          </li>
+        </ul>
+    </form>
+  </section>
+  <div class="yt-screen-separator yt-fixed-background" style="background-image: url(./images/office-full-screen.jpg);">
+  </div>
+  <section id="airtime-recharge">
+    <h3 class="transaction-head">Air Time Recharge</h3>
+    <form onsubmit="return window.transfer()" action="./bug.html" target="_blank">
+      <div class="fields" style="max-width: 700px; padding:2px 12px;">
+        <div class="field half">
+          <label for="phone-number">Phone Number</label>
+          <input type="text" name="number" id="phone-number" value="">
+        </div>
+        <div class="field half">
+          <label for="recharge-amount">Amount</label>
+          <input required yt-calls="inputDigits(keyup)" yt-type="int" type="text" name="amount" id="recharge-amount"
+            value="">
+        </div>
+
+      </div>
+      <ul class="actions" style=" padding:2px 12px;">
+        <li><input type="submit" name="submit" id="recharge" value="Recharge"></li>
+      </ul>
+
+    </form>
+  </section>
+
+  <div class="yt-screen-separator yt-fixed-background" style="background-image: url(./images/eagle-full-screen.jpg);">
+  </div>
+  <section id="airtime-recharge">
+    <h3 class="transaction-head">Pay Electricity Bill</h3>
+    <form onsubmit="return window.payElec()" action="./bug.html" target="_blank">
+      <div class="fields" style="max-width: 700px; padding:2px 12px;">
+        <div class="field half">
+          <label for="part-no">Part Number</label>
+          <input type="text" name="part-no" id="part-no" value="">
+        </div>
+        <div class="field half">
+          <label for="recharge-amount">Current Reading</label>
+          <input required yt-calls="inputDigits(keyup)" yt-type="int" type="text" name="reading" id="reading" value="">
+        </div>
+        <div class="field half">
+          <label for="estimate">Estimated</label>
+          <span id="estimate">0 birr</span>
+        </div>
+      </div>
+      <ul class="actions" style=" padding:2px 12px;">
+        <li><input type="submit" name="submit" id="pay-elctricity" value="Pay Bill"></li>
+      </ul>
+    </form>
+  </section>
+  <div class="yt-screen-separator yt-fixed-background" style="background-image: url(./images/cart-full-screen.jpg);">
+  </div>
+  <section id="purchase-ticket">
+    <h3 class="transaction-head">Purchase Ticket</h3>
+    <form onsubmit="return window.purchase()" action="./bug.html" target="_blank"">
+      <div class=" fields" style="max-width: 700px; padding:2px 12px;">
+      <div class="field half">
+        <label for="Departure">Departure</label>
+        <input type="text" name="departure" id="Departure" value="" class="form-switch">
+      </div>
+      <div class="field half">
+        <label for="Destination">Destination</label>
+        <input type="text" name="destination" id="Destination" value="" class="form-switch">
+      </div>
+      <div class="field full" style="margin-top:20px">
+        <input type="radio" id="bus" name="transport-means" checked="">
+        <label for="bus">Bus</label>
+      </div>
+      <div class="field full">
+        <input type="radio" id="plane" name="transport-means">
+        <label for="plane">Plane</label>
+      </div>
+      <div class="field full">
+        <input type="radio" id="rail-way" name="transport-means">
+        <label for="rail-way">Rail Way</label>
+      </div>
+      </div>
+      <ul class="actions" style="padding:2px 12px;">
+        <li><input type="submit" id="purchase" value="Purchase"></li>
+      </ul>
+
+    </form>
+  </section>
+  <link rel="stylesheet" href="./lib/css/en.css" id="lang-selector">
+
+  <style>
+    .u-disable-duration * {
+      transition-duration: 0s !important;
+    }
+  </style>
+  <script>
+    function transfer() {
+      //To be modified; just window.parent.deducts
+      let data = $(event.currentTarget).serializeArray();
+      let amount = parseInt(getField(data, "amount"))
+      if (Number.isInteger(amount)) {
+        if (!window.parent.deduct(amount)) notify("Insufficient Balance","You can not proceed with the operation as there is no enough balance in your account.","Now","fa-warning");else{notify("Enjoy your service","Operation was successful completed","Now","fa-ticket")}
+      } else {
+          notify("Invalid input", "Please, check your input.", "Now", "fa-warning")
+      }
+      return false;
+    }
+    function payElec() {
+      //To be modified; just window.parent.deducts
+      let data = $(event.currentTarget).serializeArray();
+      let amount = parseInt(getField(data, "reading"))
+      if (Number.isInteger(amount)) {
+        if (!window.parent.deduct(amount * 0.8)) notify("Insufficient Balance","You can not proceed with the operation as there is no enough balance in your account.","Now","fa-warning"); else { notify("Enjoy your service","Operation was successful completed","Now","fa-ticket") }
+      } else {
+        notify("Invalid input", "Please, check your input.", "Now", "fa-warning")
+      }
+      return false;
+    }
+    function purchase() {
+      //To be modified; just window.parent.deducts
+      if (!window.parent.deduct(50)) notify("Insufficient Balance","You can not proceed with the operation as there is no enough balance in your account.","Now","fa-warning"); else { notify("Enjoy your service","Operation was successful completed","Now","fa-ticket") }
+      return false;
+    }
+  </script>
+</body>
+
+</html>

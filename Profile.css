@@ -1,0 +1,65 @@
+#profile-images {
+    display: block;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+#profile-images>#bg>img {
+    width: 100%;
+
+}
+
+#profile-images>#avatar {
+    overflow: hidden !important;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px #33333355;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+
+#profile-images>#avatar>img {
+    width: 100%;
+    height: fit-content !important;
+}
+
+#profile-images>#user-name>div {
+    transform: translate(calc(30vw + 10px), calc(-50% - 15vw));
+}
+
+#info {
+    margin: 50px;
+    padding: 5px;
+}
+
+#profile-images>#user-name {
+    max-height: 0px;
+    width: 100%;
+    overflow: visible;
+    font-family: 'yt-roboto';
+}
+
+#profile-images.full>#avatar {
+    overflow: hidden !important;
+    height: fit-content;
+    min-height: 100px;
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0px 5px 5px #33333355;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#profile-images.full>#user-name>div {
+    color: white;
+    transition: 1s;
+    transform: translate(20px, calc(-250%));
+}

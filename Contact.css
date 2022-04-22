@@ -1,0 +1,273 @@
+ .u-section-1 {
+   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/sunrise.jpg");
+   background-position: 50% 50%;
+ }
+
+ .u-section-1 .u-sheet-1 {
+   min-height: 590px;
+ }
+
+ .u-section-1 .u-text-1 {
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   margin: 60px auto 0 70px;
+ }
+
+ .u-section-1 .u-layout-wrap-1 {
+   width: 1020px;
+   margin: 30px auto 60px;
+ }
+
+ .u-section-1 .u-layout-cell-1 {
+   min-height: 296px;
+ }
+
+ .u-section-1 .u-container-layout-1 {
+   padding: 30px 60px;
+ }
+
+ .u-section-1 .u-text-2 {
+   margin: 0;
+ }
+
+ .u-section-1 .u-text-3 {
+   margin: 20px 0 0;
+ }
+
+ .u-section-1 .u-text-4 {
+   margin: 20px 0 0;
+ }
+
+ .u-section-1 .u-text-5 {
+   margin: 20px 0 0;
+ }
+
+ .u-section-1 .u-social-icons-1 {
+   white-space: nowrap;
+   height: 32px;
+   min-height: 16px;
+   width: 158px;
+   min-width: 94px;
+   margin: 30px auto 0 0;
+ }
+
+ .u-section-1 .u-icon-1 {
+   height: 100%;
+ }
+
+ .u-section-1 .u-icon-2 {
+   height: 100%;
+ }
+
+ .u-section-1 .u-icon-3 {
+   height: 100%;
+ }
+
+ .u-section-1 .u-icon-4 {
+   height: 100%;
+ }
+
+ .u-section-1 .u-layout-cell-2 {
+   min-height: 296px;
+ }
+
+ .u-section-1 .u-container-layout-2 {
+   padding: 20px;
+ }
+
+ .u-section-1 .u-form-1 {
+   margin: 0;
+ }
+
+ .u-section-1 .u-btn-1 {
+   border-style: none;
+ }
+
+ @media (max-width: 1199px) {
+   .u-section-1 .u-sheet-1 {
+     min-height: 417px;
+   }
+
+   .u-section-1 .u-text-1 {
+     margin-left: 0;
+     font-size: 3rem;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: 940px;
+   }
+
+   .u-section-1 .u-layout-cell-1 {
+     min-height: 273px;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 273px;
+   }
+ }
+
+ @media (max-width: 991px) {
+   .u-section-1 .u-sheet-1 {
+     min-height: 353px;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: 720px;
+   }
+
+   .u-section-1 .u-layout-cell-1 {
+     min-height: 209px;
+   }
+
+   .u-section-1 .u-container-layout-1 {
+     padding-left: 30px;
+     padding-right: 30px;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 209px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .u-section-1 .u-sheet-1 {
+     min-height: 777px;
+   }
+
+   .u-section-1 .u-text-1 {
+     font-size: 2.25rem;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: 540px;
+   }
+
+   .u-section-1 .u-layout-cell-1 {
+     min-height: 348px;
+   }
+
+   .u-section-1 .u-container-layout-1 {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+
+   .u-section-1 .u-social-icons-1 {
+     margin-left: auto;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 285px;
+   }
+
+   .u-section-1 .u-container-layout-2 {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+ }
+
+ @media (max-width: 575px) {
+   .u-section-1 .u-sheet-1 {
+     min-height: 344px;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: 340px;
+   }
+
+   .u-section-1 .u-layout-cell-1 {
+     min-height: 100px;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 100px;
+   }
+ }
+
+
+
+ .form-submit:hover>.form-register {
+   transition-duration: var(--default-duration);
+   max-width: 60px;
+   overflow: visible;
+   pointer-events: all;
+   opacity: 1;
+ }
+
+ .form-submit {
+   margin-left: 15px;
+   display: flex;
+   justify-content: space-between;
+   box-sizing: content-box;
+   height: 40px;
+   width: 190px;
+   max-width: 70px;
+   background-color: white;
+   border-radius: 0px;
+   transition-duration: 0.5s;
+   position: relative;
+   box-shadow: 0px 10px 10px #33333355;
+ }
+
+ .form-submit:hover {
+   border-radius: 20px;
+   transition-duration: 1s;
+   max-width: 500px;
+ }
+
+ .form-submit>.holder {
+   transition-duration: 1s;
+   display: block;
+   opacity: 1;
+   height: 100%;
+   width: 100%;
+   min-width: 70px;
+   background-color: white;
+   color: #555555;
+   border: none;
+   text-align: center;
+   margin: 0px;
+ }
+
+
+ .form-submit:hover>.holder {
+   display: none;
+   opacity: 0;
+ }
+
+ .form-register {
+   transition-delay: 0s;
+   display: inline-block;
+   box-sizing: border-box;
+   max-width: 0px;
+   overflow: hidden;
+   height: 40px;
+   width: 40px;
+   max-width: 0px;
+   background-color: white;
+   border-radius: 50%;
+   border: 1px transparent solid;
+   transition-duration: 0s;
+   pointer-events: none;
+   opacity: 0;
+ }
+
+
+ .form-register>i {
+   color: #00000099;
+   height: 20px;
+   width: 20px;
+ }
+
+ .form-register:hover>i {
+   color: var(--light-primary);
+ }
+
+ .form-register:hover {
+   border-color: var(--light-primary);
+   transform: scale(1.1);
+ }
+
+ .form-register:active {
+   transform: scale(0.9);
+ }

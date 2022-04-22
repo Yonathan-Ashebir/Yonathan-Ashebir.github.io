@@ -1,0 +1,87 @@
+.account-no {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between !important;
+    margin: 10px 10px 10px 0px;
+    max-width: 700px;
+}
+
+.account-no-small {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start !important;
+    align-items: center;
+    margin: 10px 10px 10px 0px;
+}
+
+.account-no-small>i {
+    font-weight: 1000;
+    margin: 0 5px;
+}
+
+input.no-segment {
+    font-size: 20px;
+    border: 1px inset rgba(0, 0, 0, 0.1);
+    width: 80px !important;
+    height: 40px;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-stretch: expanded;
+}
+
+input.digit {
+    font-size: 20px;
+    border: 1px inset rgba(0, 0, 0, 0.1);
+    width: 38px !important;
+    height: 38px !important;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px !important;
+    transform: none !important;
+    padding: 0px !important;
+}
+
+
+
+input.personal-info {
+    border: 2px transparent solid;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+form label {
+    margin-top:1.5rem;
+}
+
+.transaction-head {
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+section {
+    margin: 10px 10px 10px 30px !important;
+}
+
+@media (min-width:700px) {
+    .account-no-small {
+        display: none;
+    }
+
+    .account-no {
+        display: flex;
+    }
+}
+
+@media (max-width:700px) {
+    .account-no-small {
+        display: flex;
+    }
+
+    .account-no {
+        display: none;
+    }
+}

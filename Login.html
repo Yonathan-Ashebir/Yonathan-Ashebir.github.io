@@ -1,0 +1,150 @@
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+  <script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./lib/css/font_awesome/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="./lib/css/custom.css" />
+  <link rel="stylesheet" href="./lib/css/custom-2.css" />
+  <script src="./lib/js/jquery-3.6.0.js"></script>
+  <script src="./lib/js/anime.js"></script>
+  <script src="./lib/js/custom.js"></script>
+
+  <script src="./lib/js/linker.js"></script>
+  <script src="./lib/js/layout.js"></script>
+
+</head>
+
+<body class="img js-fullheight" style="background-image: url(images/sunrise.jpg);">
+  <section class="ftco-section">
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+        <h2 class="heading-section">Sign in</h2>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="">
+        <div class="login-wrap p-0">
+          <h3 class="mb-4 text-center"><a href="./faq.html#account-create" style="
+    color: white;
+">How to create an account?</a></h3>
+          <form action="./bug.html" class="signin-form" id="signin-form" onsubmit="return window.login();">
+            <div class=" form-group">
+              <input type="text" class="form-control" placeholder="Username" required="" name="name">
+            </div>
+            <div class="form-group">
+              <input name="password" id="password-field" type="password" class="form-control" placeholder="Password"
+                required="">
+              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+            </div>
+            <div class="account-no field full" style="margin-top: 40px;">
+              <input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole" class="digit form-control"
+                yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole"
+                class="digit form-control" yt-max-length="1">
+              <input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole" class="digit form-control"
+                yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole"
+                class="digit form-control" yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text"
+                yt-type="whole" class="digit form-control" yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()"
+                type="text" yt-type="whole" class="digit form-control" yt-max-length="1"><input
+                onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole" class="digit form-control"
+                yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole"
+                class="digit form-control" yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text"
+                yt-type="whole" class="digit form-control" yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()"
+                type="text" yt-type="whole" class="digit form-control" yt-max-length="1"><input
+                onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole" class="digit form-control"
+                yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text" yt-type="whole"
+                class="digit form-control" yt-max-length="1"><input onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" type="text"
+                yt-type="whole" class="digit form-control" yt-max-length="1">
+            </div>
+            <div class="account-no-small field full" style="margin-top: 40px;">
+              <input type="text" yt-type="whole" class="no-segment  form-control" onkeydown="return window.validateInput();" onkeyup="window.changeFocus()"
+                id="first-four" yt-next-focus="#second-four" yt-max-length="4"><i>-</i><input type="text" yt-type="whole"
+                onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" class="no-segment  form-control" id="second-four"
+                yt-next-focus="#last-five" yt-max-length="4"><i>-</i><input style="width:100px !important" type="text"
+                yt-type="whole" class="no-segment  form-control" onkeydown="return window.validateInput();" onkeyup="window.changeFocus()" yt-max-length="5"
+                id="last-five">
+            </div>
+            <div class="form-group" style="
+    display: flex;
+    justify-content: center;
+">
+              <button type="submit" class="form-control primary submit px-3" style="
+    margin-top: 40px;
+    width: 100%;
+">Sign In</button>
+            </div>
+            <div class="form-group d-md-flex">
+              <div class="w-50" style="
+    color: var(--light-primary);
+">
+                <label class="checkbox-wrap checkbox-primary" style="
+    color: var(--light-primary,orange);
+">Remember Me
+                  <input type="checkbox" checked="">
+                  <span class="checkmark" style=""></span>
+                </label>
+              </div>
+
+            </div>
+          </form>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  &lt;
+  <script src="js/jquery.min.js">
+  </script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>&gt;
+  <script>
+    function login() {
+      try {
+        let form = document.querySelector("#signin-form")
+        let data = $(form).serializeArray();
+        let largeScreen = window.getComputedStyle(form.querySelector(".account-no")).display != "none"
+        let accountStr = "";
+        let inputs;
+        if (largeScreen) {
+          inputs = form.querySelectorAll(".digit");
+        } else {
+          inputs = form.querySelectorAll(".no-segment");
+        }
+        for (let ind = 0; ind < inputs.length; ind++) {
+          const input = inputs[ind];
+          accountStr+=input.value
+        }
+        let accountNo = parseInt(accountStr)
+        if (isNaN(accountNo)) {
+          notify("Invalid credits","Please, check your input.","Now","fa-lock")
+        } else if (signIn(accountNo, getField(data,"password"))) {
+          history.replaceState(null, null, "./index.html");
+          history.go();
+        } else {
+        notify("Invalid credits", "Please, check your input.", "Now", "fa-lock")
+        }
+      } catch (err) {
+        console.log(err)
+           notify("Invalid credits", "Please, check your input.", "Now", "fa-lock")
+      }
+      return false;
+    }
+  </script>
+
+</body>
+
+</html>

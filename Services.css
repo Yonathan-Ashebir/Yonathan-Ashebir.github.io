@@ -1,0 +1,76 @@
+@keyframes length {
+    from {
+        width: 10%
+    }
+
+    to {
+        width: 30%;
+    }
+}
+
+.service-cont {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.service-item {
+    flex: 2 0.5 400px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #00000022, -2px -2px 2px #00000022;
+    background-color: white ;
+
+}
+
+.service-item:hover .service-mark {
+    animation-name: length;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+
+.service-mark {
+    width: 40px;
+    margin-left: 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: var(--dark-primary);
+    height: 3px;
+}
+
+.service-title {
+    font-family: fantasy;
+    font-size: 1.2rem;
+    margin-left: 10px;
+
+}
+
+.service-detail {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    padding: 0px 15px 0px 0px;
+    word-wrap: normal;
+}
+
+.service-sub-item {
+    margin-top: 12px;
+}
+
+.service-subtitle {
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: ;
+}
+.service-imp{
+    margin-left: 30px;
+}
+.points{
+    list-style-type: disc;
+}
