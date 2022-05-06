@@ -1,0 +1,59 @@
+{
+    "configurations": [
+        {
+            "name": "debug selsection",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "webRoot": "${selectedText}"
+        },
+        {
+            "name": "open workspace",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "debug line",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "webRoot": "${lineNumber}"
+        },
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "run file",
+            "file": "${file}",
+            "address": "localhost"
+        },
+        {
+            "command": "npm start",
+            "name": "Start",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm run build",
+            "name": "Build",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm run build",
+            "name": "Test",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm run eject",
+            "name": "Eject",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "type": "pwa-chrome",
+            "name": "http://127.0.0.1:3000/Index.html",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/Index.html"
+        }
+    ]
+}
