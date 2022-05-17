@@ -54,6 +54,18 @@
             "name": "http://127.0.0.1:3000/Index.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/Index.html"
+        },
+        {
+            "type": "pwa-chrome",
+            "name": "http://127.0.0.1:3000/lib/js/layout.js",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/lib/js/layout.js"
+        },
+        {
+            "type": "pwa-chrome",
+            "name": "http://127.0.0.1:3000/lib/js/custom.js",
+            "request": "launch",
+            "url": "http://127.0.0.1:3000/lib/js/custom.js"
         }
     ]
 }

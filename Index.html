@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
   <title>Index</title>
   <link rel="stylesheet" href="nicepage.css">
   <link rel="stylesheet" href="./lib/css/font_awesome/css/font-awesome.min.css" />
@@ -310,7 +310,7 @@ transform: none;
 
 
   <div style="width:100%" id="nav-spacer"></div>
-  <iframe id="nested" style="width: 100%;height:100%" src="home.html">
+  <iframe id="nested" style="width: 100%;height:100%" src="home.html" onload="window.preparePane(this)">
 
   </iframe>
   <section
@@ -480,43 +480,48 @@ transform: none;
 
 
         if (data != null) {
-          user = getUserInfo(data.accountNumber, data.password)
-          isAmh = data.isAmh;
+          window.user = getUserInfo(data.accountNumber, data.password)
+          window.isAmh = data.isAmh;
 
-        }
-        if (user == null) {
-          showWelcomeDialog()
-          $("#transactions-tab").hide();
-          $("#transactions-2-tab").hide();
-          $("#profile-tab").hide();
-          $("#profile-2-tab").hide();
-          $("#login-tab").show();
-          $("#login-2-tab").show();
-        } else {
-          $("#transactions-tab").show();
-          $("#transactions-2-tab").show();
-          $("#profile-tab").show();
-          $("#profile-2-tab").show();
-          $("#login-tab").hide();
-          $("#login-2-tab").hide();
 
-        }
-        if (isAmh) {
-          $("#lang-selector").attr("href", "./lib/css/amh.css")
-          if (iframe != null && iframe.contentDocument != null) $(iframe.contentDocument.querySelector("#lang-selector")).attr("href", "./lib/css/amh.css")
-          $("#lang-btn").text("Eng");
-        }
-        if (data.lastVisited != null) {
-          try {
-            iframe.contentWindow.history.replaceState(null, null, data.lastVisited);
-            iframe.contentWindow.history.go();
-          } catch (error) {
-            console.log("From Yonathan: Cross origin reference is not allowed.")
-            $(iframe).src = data.lastVisited;
+          if (window.user == null) {
+            showWelcomeDialog()
+            $("#transactions-tab").hide();
+            $("#transactions-2-tab").hide();
+            $("#profile-tab").hide();
+            $("#profile-2-tab").hide();
+            $("#login-tab").show();
+            $("#login-2-tab").show();
+          } else {
+            $("#transactions-tab").show();
+            $("#transactions-2-tab").show();
+            $("#profile-tab").show();
+            $("#profile-2-tab").show();
+            $("#login-tab").hide();
+            $("#login-2-tab").hide();
+
+          }
+          if (window.isAmh) {
+            $("#lang-selector").attr("href", "./lib/css/amh.css")
+            if (iframe && iframe.contentDocument != null) $(iframe.contentDocument.querySelector("#lang-selector")).attr("href", "./lib/css/amh.css")
+            $("#lang-btn").text("Eng");
+          }
+          if (data.lastVisited != null) {
+            try {
+              iframe.contentWindow.history.replaceState(null, null, data.lastVisited);
+              iframe.contentWindow.history.go();
+            } catch (error) {
+              console.log("From Yonathan: Cross origin reference is not allowed.")
+              $(iframe).src = data.lastVisited;
+            }
           }
         }
       }
-
+      var preparePane = () => {
+        if (iframe && window.isAmh) {
+          $(iframe.contentDocument.querySelector("#lang-selector")).attr("href", "./lib/css/amh.css")
+        }
+      }
       var showWelcomeDialog = function () {
         let dialog = $("#welcome-dialog")
         dialog.addClass("u-dialog-open")

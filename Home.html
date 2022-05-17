@@ -76,10 +76,6 @@
       </button>
     </div>
     <script>
-      window.onload=function () {
-        alert("Act: "+window.provider.getActivity());
-        alert("view: "+window.provider.getActivity().binding.webView);
-      }
       function customLoop() {
         toggleHello()
         setTimeout(function () { customLoop() }, 1000);
