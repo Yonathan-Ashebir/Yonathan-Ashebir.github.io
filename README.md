@@ -1,2 +1,2 @@
 # Yonathan-Ashebir.github.io
-testing web page deployment
+My first school web project
